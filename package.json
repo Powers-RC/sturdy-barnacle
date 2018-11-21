@@ -34,7 +34,7 @@
     "startbootstrap-clean-blog": "^5.0.1"
   },
   "scripts": {
-    "start:both": "concurrently --kill-others-on-fail \"npm run start:db --prefix ../backend\" \"npm run start\"",
+    "start:both": "concurrently --kill-others-on-fail \"npm run start:db --prefix ./backend\" \"npm run start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,5 +48,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "engines": {
+    "node": "10.12.0"
+  }
 }

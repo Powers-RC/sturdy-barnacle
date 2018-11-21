@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "heroku-postbuild": "concurrently --kill-others-on-fail \"npm run start:db\" \"npm run build --prefix ../blog\"",
+    "heroku-postbuild": "concurrently --kill-others-on-fail \"npm run start:db\" \"npm run build --prefix ..\"",
     "start:db": "nodemon ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

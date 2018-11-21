@@ -24,6 +24,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.5.4",
+    "pg": "^7.6.1",
     "popper.js": "^1.14.4",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
@@ -31,6 +32,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "reactstrap": "^6.5.0",
+    "sequelize": "^4.41.2",
     "startbootstrap-clean-blog": "^5.0.1"
   },
   "scripts": {

@@ -1,3 +1,2 @@
-web: node ./backend/bin/www.js &&  node ./src/index.js
-fontend: npm run start:front
+web: npm run start
 server: npm run start:db --prefix ./backend

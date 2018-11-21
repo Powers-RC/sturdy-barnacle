@@ -34,8 +34,8 @@
     "startbootstrap-clean-blog": "^5.0.1"
   },
   "scripts": {
-    "start:both": "concurrently --kill-others-on-fail \"npm run start:db --prefix ./backend\" \"npm run start\"",
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others-on-fail \"npm run start:db --prefix ./backend\" \"npm run start:front\"",
+    "start:front": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -8,7 +8,7 @@ const path = require('path');
 const app = express();
 
 //require env vars
-require('dotenv').config()
+//require('dotenv-flow').config();
 
 // Log requests to the console.
 app.use(logger('dev'));

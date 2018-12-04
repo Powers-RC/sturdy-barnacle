@@ -24,7 +24,6 @@ yarn-error.log*
 ./backend/.env.stage
 
 #backend test
-./backend
 
 #intellij
 ./.idea

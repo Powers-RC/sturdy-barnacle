@@ -2,13 +2,21 @@ const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
+const proxy = require('http-proxy-middleware');
 
 
 // Set up the express app
 const app = express();
 
+//Middleware Options
+const options = {"target": 'http://localhost:8000', "secure": false, "changeOrigin": true, "logLevel": "debug"};
+
+//Add Middleware for http proxying
+const apiProxy = proxy('/api*', options);
+app.use('/api', apiProxy);
+
 //require env vars
-require('dotenv').config()
+require('dotenv-flow').config();
 
 // Log requests to the console.
 app.use(logger('dev'));

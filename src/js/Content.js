@@ -10,7 +10,7 @@ export class Content extends React.Component{
 
   componentDidMount(){
     this.callApi()
-    .then(res => this.setState({ blogObject: res[1].title }))
+    .then(res => this.setState({ blogObject: res[0].title }))
     .catch(err => console.log(err));
   }
 

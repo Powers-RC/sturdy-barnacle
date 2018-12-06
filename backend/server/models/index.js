@@ -2,19 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
 const basename = path.basename(module.filename);
-//const env = process.env.NODE_ENV || 'development';
-//const config = require(`${__dirname}/../config/config.json`)[env];
 const db = {};
 
 let sequelize;
-//if (config.use_env_variable) {
-  console.log(process.env)
-  sequelize = new Sequelize(process.env.DATABASE, process.env.DB_USER, process.env.DB_PASSWORD, {host:process.env.HOST, dialect:process.env.DIALECT});
-//} else {
-//  sequelize = new Sequelize(
-//    config.database, config.username, config.password, config
-//  );
-//}
+console.log(`Current Running Environment: ${process.env.NODE_ENV}`)
+  if(process.env.NODE_ENV === 'development'){
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+  }
+  else if (process.env.NODE_ENV === 'test'){
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+  }
+  else{
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+  }
 
 fs
   .readdirSync(__dirname)
@@ -35,5 +35,6 @@ Object.keys(db).forEach(modelName => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 
 module.exports = db;

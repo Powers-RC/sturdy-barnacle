@@ -11,7 +11,6 @@
 
 # misc
 .DS_Store
-./backend/.env
 
 
 npm-debug.log*
@@ -23,9 +22,16 @@ yarn-error.log*
 ./backend/.env.production
 ./backend/.env.stage
 
+<<<<<<< HEAD
 #backend test
 ./backend
 
 #intellij
 ./.idea
 ./dQA.iml
+=======
+#intellij
+.idea
+dQA.iml
+
+>>>>>>> prodBackend

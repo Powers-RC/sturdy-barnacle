@@ -9,11 +9,11 @@ const proxy = require('http-proxy-middleware');
 const app = express();
 
 //Middleware Options
-const options = {"target": 'http://data-qna.herokuapp.com:8000', "secure": false, "changeOrigin": true, "logLevel": "debug"};
+//const options = {"target": 'http://data-qna.herokuapp.com:8000', "secure": false, "changeOrigin": true, "logLevel": "debug"};
 
 //Add Middleware for http proxying
-const apiProxy = proxy('/api*', options);
-app.use('/api', apiProxy);
+//const apiProxy = proxy('/api*', options);
+//app.use('/api', apiProxy);
 
 //require env vars
 require('dotenv-flow').config();

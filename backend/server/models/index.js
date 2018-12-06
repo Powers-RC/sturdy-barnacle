@@ -10,10 +10,10 @@ console.log(`Current Running Environment: ${process.env.NODE_ENV}`)
     sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
   }
   else if (process.env.NODE_ENV === 'test'){
-    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT});
   }
   else{
-    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT});
   }
 
 fs

@@ -23,6 +23,6 @@ yarn-error.log*
 ./backend/.env.stage
 
 #intellij
-./.idea
+.idea
 dQA.iml
 

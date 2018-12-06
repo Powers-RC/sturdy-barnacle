@@ -1,5 +1,6 @@
 require('dotenv-flow').config();
 
+
 module.exports = {
   "development": {
     "username": process.env.DB_USER,
@@ -17,3 +18,5 @@ module.exports = {
     "use_env_variable": process.env.DATABASE_URL
   }
 };
+
+c

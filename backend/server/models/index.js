@@ -5,8 +5,11 @@ const basename = path.basename(module.filename);
 const db = {};
 
 let sequelize;
-console.log(process.env.NODE_ENV)
-  if(process.env.NODE_ENV !== 'development'){
+console.log(`Current Running Environment: ${process.env.NODE_ENV}`)
+  if(process.env.NODE_ENV === 'development'){
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+  }
+  else if (process.env.NODE_ENV === 'test'){
     sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
   }
   else{
@@ -32,5 +35,6 @@ Object.keys(db).forEach(modelName => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
 
 module.exports = db;

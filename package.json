@@ -37,7 +37,9 @@
     "startbootstrap-clean-blog": "^5.0.1"
   },
   "scripts": {
+    "heroku-postbuild": "",
     "start:both": "concurrently --kill-others-on-fail \"npm run start:db --prefix ./backend\" \"npm run start\"",
+    "build:both": "concurrently --kill-others-on-fail \"npm run build --prefix ./backend\" \"npm run build\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

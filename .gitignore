@@ -24,7 +24,6 @@ yarn-error.log*
 
 <<<<<<< HEAD
 #backend test
-./backend
 
 #intellij
 ./.idea

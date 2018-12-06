@@ -22,15 +22,9 @@ yarn-error.log*
 ./backend/.env.production
 ./backend/.env.stage
 
-<<<<<<< HEAD
 #backend test
 
 #intellij
 ./.idea
 ./dQA.iml
-=======
-#intellij
-.idea
-dQA.iml
 
->>>>>>> prodBackend

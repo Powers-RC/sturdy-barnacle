@@ -14,7 +14,6 @@
     "answers",
     "thoughts"
   ],
-  "homepage": "https://data-qna.herokuapp.com/",
   "proxy": "http://localhost:8000",
   "bugs": {
     "email": "powerscameron@ymail.com"

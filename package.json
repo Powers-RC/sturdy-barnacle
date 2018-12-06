@@ -14,7 +14,7 @@
     "answers",
     "thoughts"
   ],
-  "proxy": "https://data-qna.herokuapp.com:8000",
+  "proxy": "http://localhost:8000",
   "bugs": {
     "email": "powerscameron@ymail.com"
   },
@@ -36,7 +36,7 @@
     "startbootstrap-clean-blog": "^5.0.1"
   },
   "scripts": {
-    "heroku-postbuild": "cd backend && npm run build",
+    "heroku-postbuild": "NODE_ENV=development cd backend && npm run build",
     "start:both": "concurrently --kill-others-on-fail \"npm run start:db --prefix ./backend\" \"npm run start\"",
     "build:both": "concurrently --kill-others-on-fail \"npm run build --prefix ./backend\" \"npm run build\"",
     "start": "react-scripts start",

@@ -7,7 +7,8 @@ const db = {};
 let sequelize;
 console.log(`Current Running Environment: ${process.env.NODE_ENV}`)
   if(process.env.NODE_ENV === 'development'){
-    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});
+    console.log("Entered Development Block")
+    sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT});
   }
   else if (process.env.NODE_ENV === 'test'){
     sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT, dialectOptions: {ssl: true}});

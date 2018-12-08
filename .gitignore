@@ -1,13 +1,15 @@
 
 # dependencies
 ./backend/node_modules
-./node_modules
+node_modules
+package-lock.json
+./backend/package-lock.json
 
 # testing
 /coverage
 
 # production
-./blog/build
+./build
 
 # misc
 .DS_Store

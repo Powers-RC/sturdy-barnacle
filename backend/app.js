@@ -16,8 +16,7 @@ const app = express();
 //app.use('/api', apiProxy);
 
 //require env vars
-require('dotenv-flow').config();
-
+require('dotenv-flow').config({cwd:'/Users/powers_rc/dQA'});
 // Log requests to the console.
 app.use(logger('dev'));
 

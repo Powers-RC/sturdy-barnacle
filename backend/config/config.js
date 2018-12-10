@@ -1,6 +1,4 @@
-require('dotenv-flow').config();
-
-
+console.log(process.env)
 module.exports = {
   "development": {
     "username": process.env.DB_USER,

@@ -1,2 +1,2 @@
-web: npm run start
+worker: npm run start
 server: npm run start:db --prefix ./backend

@@ -27,6 +27,6 @@ yarn-error.log*
 #backend test
 
 #intellij
-./.idea
-./dQA.iml
+.idea
+dQA.iml
 

@@ -20,9 +20,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # env files
-./backend/.env.local
-./backend/.env.production
-./backend/.env.stage
+./.env.local
+./.env.production
+./.env.stage
 
 #backend test
 

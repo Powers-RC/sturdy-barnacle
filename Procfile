@@ -1,3 +1,3 @@
-server: npm run start:db --prefix ./backend
+server: node start:db --prefix ./backend
 web: npm run start
 

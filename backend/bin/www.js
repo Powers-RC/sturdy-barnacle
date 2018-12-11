@@ -3,10 +3,9 @@ const http = require('http');
 const app = require('../app'); // The express app we just created
 
 let port = process.env.PORT;
-let host = process.env.HOST;
 if (port == null || port == "") {
   port = 8000;
 }
 app.set('port', port);
 const server = http.createServer(app);
-server.listen(port, host);
+server.listen(port);

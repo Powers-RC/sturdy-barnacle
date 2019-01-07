@@ -25,7 +25,7 @@ export class Content extends React.Component{
 
   render(){
     return(
-    <div className='App'>
+    <div id="content-section" className='App'>
       {this.state.blogObject}
     </div>
     )

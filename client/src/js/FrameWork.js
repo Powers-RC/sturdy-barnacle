@@ -23,14 +23,10 @@ export default class FrameWork extends Component{
           <NavigationBar />
         </header>
         <div id='main'>
-          <Switch>
-            <Route exact path="/" component={ App }/>
-            <Route path="/about" component={ About }/>
-            <Route path="/contact" component={ Contact } />
-          </Switch>
-        </div>
-        <div>
+          <App/>
           <Content/>
+          <About/>
+          <Contact/>
         </div>
         <footer>
         </footer>

@@ -6,7 +6,7 @@ export class App extends Component {
 
   render() {
     return (
-        <div className="App">
+        <div id="visual-intro" className="App">
               <img src={logo} className="App-logo" alt="logo" />
               <p>
                 Edit <code>src/App.js</code> and save to reload.

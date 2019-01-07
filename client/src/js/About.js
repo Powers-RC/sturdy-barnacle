@@ -4,8 +4,8 @@ export class About extends Component{
 
   render(){
     return(
-      <div className="About-Page">
-        <h1>TESTING!!!!</h1>
+      <div id="about-section" className="About-Section">
+        <p>TESTING!!!!</p>
       </div>
     );
   }

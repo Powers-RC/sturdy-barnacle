@@ -1,18 +1,19 @@
 
 # dependencies
-./client/node_modules
-./node_modules
-./package-lock.json
-./client/package-lock.json
+client/node_modules
+node_modules
+package-lock.json
+client/package-lock.json
 
 # testing
 /coverage
 
 # production
-./client/build
+client/build
 
 # misc
 .DS_Store
+.gitignore
 
 
 npm-debug.log*
@@ -27,6 +28,6 @@ yarn-error.log*
 #backend test
 
 #intellij
-./.idea
-./dQA.iml
+.idea
+dQA.iml
 

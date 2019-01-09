@@ -1,15 +1,15 @@
 
 # dependencies
-./client/node_modules
-./node_modules
-./package-lock.json
-./client/package-lock.json
+client/node_modules
+node_modules
+package-lock.json
+client/package-lock.json
 
 # testing
 /coverage
 
 # production
-./client/build
+client/build
 
 # misc
 .DS_Store
@@ -20,13 +20,13 @@ yarn-debug.log*
 yarn-error.log*
 
 # env files
-./.env.local
-./.env.production
-./.env.stage
+.env.test
+.env.production
+.env.development
 
 #backend test
 
 #intellij
-./.idea
-./dQA.iml
+.idea
+dQA.iml
 

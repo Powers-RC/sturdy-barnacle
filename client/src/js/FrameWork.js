@@ -18,7 +18,7 @@ export default class FrameWork extends Component{
 
   render(){
     return(
-     <div>
+     <div className="root">
         <header className="App-header">
           <NavigationBar />
         </header>
@@ -29,6 +29,7 @@ export default class FrameWork extends Component{
           <Contact/>
         </div>
         <footer>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
         </footer>
      </div>
     );

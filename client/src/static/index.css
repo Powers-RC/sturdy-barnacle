@@ -1,8 +1,12 @@
+root{
+  font-family: "Aire Exterior", Sophia, "Köhne Makina"
+}
+
+
 body {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "Cosmic Sans MS"
   /*
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -22,8 +26,15 @@ a {
 }
 
 .About-Section{
-  background-color: grey;
+  background-color: #C5C6C7;
   padding:350px;
+  position: relative;
+}
+
+.About-Section img{
+    position: absolute;
+    top: 5%;
+    left: 50%;
 }
 
 .navbar{
@@ -31,14 +42,23 @@ a {
   top: 0px;
   width: 100%;
   color: black;
-  background:black
+  background-color: #1F2833;
+  font-size: 20px;
 
 }
 
-navbar a {
+.navbar a {
   float: left;
   display: block;
-  color: black;
-  text-align: center;
+  color: white;
   padding: 14px 16px;
+}
+.navbar-name{
+  font-weight: bold;
+  color: white
+}
+
+
+footer{
+    font-size: 8px;
 }

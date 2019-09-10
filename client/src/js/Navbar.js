@@ -32,7 +32,8 @@ import { About } from "./About";
 
     render(){
       return(
-        <div class="navbar">
+        <div className="navbar">
+          <span className="navbar-name">Cameron Powers</span>
           <span>
             <a href='#visual-intro'>Home</a>
             <a href='#content-section'>Content</a>

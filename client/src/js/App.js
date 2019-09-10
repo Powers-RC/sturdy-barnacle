@@ -5,6 +5,7 @@ import '../static/App.css';
 export class App extends Component {
 
   render() {
+    console.log(process.env);
     return (
         <div id="visual-intro" className="App">
               <img src={logo} className="App-logo" alt="logo" />

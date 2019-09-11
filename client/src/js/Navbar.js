@@ -32,24 +32,14 @@ import { About } from "./About";
 
     render(){
       return(
-        <div id="nav-bar">
-            <Navbar color="faded" dark>
-              <NavbarBrand href="/">dQA</NavbarBrand>
-              <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-              <Collapse isOpen={!this.state.collapsed} navbar >
-                  <Nav navbar>
-                    <NavItem>
-                      <NavLink activeClassName="active" to="/" tag={ RRNavLink }>Home</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink activeClassName="active" to="/about" tag={ RRNavLink }>About</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink activeClassName="active" to="/contact" tag={ RRNavLink }>Contact</NavLink>
-                    </NavItem>
-                  </Nav>
-              </Collapse>
-            </Navbar>
+        <div className="navbar">
+          <span className="navbar-name">Cameron Powers</span>
+          <span>
+            <a href='#visual-intro'>Home</a>
+            <a href='#content-section'>Content</a>
+            <a href='#about-section'>About</a>
+            <a href='#contact-section'>Contact</a>
+          </span>
         </div>
       );
     }

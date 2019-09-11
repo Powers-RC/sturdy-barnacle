@@ -17,6 +17,12 @@ const app = express();
 
 //require env vars
 require('dotenv-flow').config();
+//TODO:Put in testing here to make sure the proper variables are being passed and available
+//console.log("Verifying Variables Pulled In");
+//console.log(process.env.HOST);
+//console.log(process.env.DATABASE_URL);
+//console.log(process.env.DIALECT);
+//console.log(process.env.DATABASE);
 
 // Log requests to the console.
 app.use(logger('dev'));

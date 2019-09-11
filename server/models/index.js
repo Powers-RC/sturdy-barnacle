@@ -4,10 +4,13 @@ const Sequelize = require('sequelize');
 const basename = path.basename(module.filename);
 const db = {};
 
+//TODO: Add to the readme that the node environment must be passed when starting the app for dotenv-flow to read in to process env 
+
 let sequelize;
 console.log(`Current Running Environment: ${process.env.NODE_ENV}`)
   if(process.env.NODE_ENV === 'development'){
     console.log("Entered Development Block")
+//    console.log(process.env)
     sequelize = new Sequelize(process.env.DATABASE_URL, {host:process.env.HOST, dialect:process.env.DIALECT});
   }
   else if (process.env.NODE_ENV === 'test'){

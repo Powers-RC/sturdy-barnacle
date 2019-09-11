@@ -1,5 +1,9 @@
-root{
-  font-family: "Aire Exterior", Sophia, "Köhne Makina"
+#root{
+  font-family:  ogg, Garamond, Sophia, "Aire Exterior", "Köhne Makina"
+}
+
+#main{
+  z-index: 1;
 }
 
 
@@ -25,24 +29,38 @@ a {
   padding: 20px;
 }
 
+/* About Section Specific Styling */
 .About-Section{
   background-color: #C5C6C7;
-  padding:350px;
+  padding:150px;
   position: relative;
+  overflow: auto;
 }
 
-.About-Section img{
+.about-title{
     position: absolute;
     top: 5%;
     left: 50%;
 }
 
+.portrait-block {
+    text-align: left;
+
+}
+
+.portrait-block img {
+    float: left;
+    margin: 0px 50px 15px 0px;
+}
+
+/* Navigation Bar Section Specific Styling */
 .navbar{
+  z-index: 2;
   position: fixed;
   top: 0px;
   width: 100%;
   color: black;
-  background-color: #1F2833;
+  background-color: #C5C6C7;
   font-size: 20px;
 
 }
@@ -50,12 +68,12 @@ a {
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: #0B0C10;
   padding: 14px 16px;
 }
 .navbar-name{
   font-weight: bold;
-  color: white
+  color: #0B0C10;
 }
 
 

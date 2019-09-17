@@ -10,13 +10,14 @@ export class SiteFooter extends Component{
   render(){
     return(
       <div className="Site-Footer">
+          <br/>
           <p className="Site-Footer-Copyright">&copy; Cameron Powers</p>
           <p className="Site-Footer-Cv">CV<img src={folderIcon} alt="Resume/CV Icon" height="15" width="15"/></p>
           <p className="Site-Footer-Social-Media">
               <span>Follow me on social media:</span>
-              <img src={linkedinIcon} alt="Linkedin Icon" height="15" width="15"/>
-              <img src={instagramIcon} alt="Instagram Icon" height="15" width="15"/>
-              <img src={twitterIcon} alt="Twitter Icon" height="15" width="15"/>
+              <a href="https://www.linkedin.com/in/powerscameron/" ><img src={linkedinIcon} alt="Linkedin Icon" height="15" width="15"/></a>
+              <a href="https://www.instagram.com/powers_rc/?hl=en"><img src={instagramIcon} alt="Instagram Icon" height="15" width="15"/></a>
+              <a href="https://twitter.com/PowersCameron"><img src={twitterIcon} alt="Twitter Icon" height="15" width="15"/></a>
           </p>
       </div>
     );

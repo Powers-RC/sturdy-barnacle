@@ -25,7 +25,7 @@ code {
     monospace;
 }
 
-a {
+.Contact-Section a{
   padding: 20px;
   color: inherit;
 }
@@ -85,25 +85,13 @@ img{
 /* Site Footer Styling */
 
 /* Figure out how to make this inline but at far ends of the page*/
-.Site-Footer p{
-  display: inline;
-  padding: 20px;
+
+
+.Site-Footer-Copyright, .Site-Footer-Cv, .Site-Footer-Social-Media{
+  width: 33.3%;
+  float: left;
 }
 
-.Site-Footer-Copyright{
-  width: 100%;
-  text-align: left;
-}
-
-.Site-Footer-Cv{
-  width: 100%;
-  text-align: center;
-}
-
-.Site-Footer-Social-Media{
-  width: 100%;
-  text-align: right;
-}
 
 footer{
     font-size: 8px;

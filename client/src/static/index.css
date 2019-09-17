@@ -27,6 +27,11 @@ code {
 
 a {
   padding: 20px;
+  color: inherit;
+}
+
+img{
+  margin: 5px;
 }
 
 /* About Section Specific Styling */
@@ -77,6 +82,30 @@ a {
 }
 
 
+/* Site Footer Styling */
+
+/* Figure out how to make this inline but at far ends of the page*/
+.Site-Footer p{
+  display: inline;
+  padding: 20px;
+}
+
+.Site-Footer-Copyright{
+  width: 100%;
+  text-align: left;
+}
+
+.Site-Footer-Cv{
+  width: 100%;
+  text-align: center;
+}
+
+.Site-Footer-Social-Media{
+  width: 100%;
+  text-align: right;
+}
+
 footer{
     font-size: 8px;
+    padding: 50px;
 }

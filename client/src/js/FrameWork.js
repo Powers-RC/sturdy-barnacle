@@ -5,6 +5,7 @@ import { App } from "./App";
 import { About } from "./About";
 import { Contact } from "./Contact";
 import { Content } from "./Content";
+import { SiteFooter } from "./SiteFooter";
 
 
 
@@ -27,8 +28,12 @@ export default class FrameWork extends Component{
           <Content/>
           <About/>
           <Contact/>
+          <SiteFooter/>
         </div>
         <footer>
+            <div className="Site-Footer">
+
+            </div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
         </footer>
      </div>

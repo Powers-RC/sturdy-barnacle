@@ -51,6 +51,6 @@
     "not op_mini all"
   ],
   "engines": {
-    "node": "10.12.0"
+    "node": "*"
   }
 }

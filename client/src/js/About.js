@@ -13,7 +13,7 @@ export class About extends Component{
         </div>
         <div className="portrait-block">
             <p>
-                <img  src={portrait} alt="Self Portrait of Author" height="300" width="400"/>
+                <img  src={portrait} alt="Self Portrait of Author" height="300" width="400" max-width="100%"/>
                 Testing to see if the text I am writing will float around my portrait in the about section of my webpagae.
                 <br/>
             </p>

@@ -20,7 +20,7 @@ export default class FrameWork extends Component{
   render(){
     return(
      <div className="root">
-        <header className="App-header">
+        <header className="App-Header">
           <NavigationBar />
         </header>
         <div id='main'>
@@ -28,11 +28,10 @@ export default class FrameWork extends Component{
           <Content/>
           <About/>
           <Contact/>
-          <SiteFooter/>
         </div>
         <footer>
             <div className="Site-Footer">
-
+              <SiteFooter/>
             </div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
         </footer>

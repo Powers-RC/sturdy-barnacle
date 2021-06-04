@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../static/logo.svg';
+import trout from '../static/photos/troutImage.jpg';
+import flyIcon from '../static/icons/fly-icon.png';
 import '../static/App.css';
 
 export class App extends Component {
@@ -7,20 +9,15 @@ export class App extends Component {
   render() {
     console.log(process.env);
     return (
-        <div id="visual-intro" className="App">
-              <img src={logo} className="App-logo" alt="logo" />
-              <p>
-                Edit <code>src/App.js</code> and save to reload.
-              </p>
-              <a
-                className="App-link"
-                href="https://reactjs.org"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-              </a>
-          </div>
+      <div className="center-div">
+        <div className="trout-intro">
+          <img src={trout} alt="Trout Image" width="100%"/>
+        </div>
+        <div className="intro-container">
+          <h1 class="title-intro">Welcome</h1>
+          <img class="title-icon" alt="fly icon" src={flyIcon}/>
+        </div>
+      </div>
     );
   }
 }

@@ -9,10 +9,10 @@ const folderIcon = require("../static/icons/folder.png");
 export class SiteFooter extends Component{
   render(){
     return(
-      <div className="Site-Footer">
+      <div className="site-footer">
           <br/>
           <p className="Site-Footer-Copyright">&copy; Cameron Powers</p>
-          <p className="Site-Footer-Cv">CV<img src={folderIcon} alt="Resume/CV Icon" height="15" width="15"/></p>
+          <p className="Site-Footer-Cv">CV<a href="https://drive.google.com/open?id=1mR-IAjk5cQl0v2cEdhELT3u7oomp3H3J"><img src={folderIcon} alt="Resume/CV Icon" height="15" width="15"/></a></p>
           <p className="Site-Footer-Social-Media">
               <span>Follow me on social media:</span>
               <a href="https://www.linkedin.com/in/powerscameron/" ><img src={linkedinIcon} alt="Linkedin Icon" height="15" width="15"/></a>

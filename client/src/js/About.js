@@ -8,7 +8,7 @@ export class About extends Component{
     return(
       <div id="about-section" className="About-Section">
         <div className="about-title">
-            <h2>About</h2>
+            <h2 className="typewriter-right">About</h2>
             <img  src={fishIcon} alt="Fish Icon" height="50" width="50"/>
         </div>
         <div className="portrait-block">

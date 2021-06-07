@@ -1,0 +1,55 @@
+.typewriter-left {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    float: left;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+.typewriter-right {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    float: right;
+    animation: 
+      typing 3.5s steps(40, end) backwards,
+      blink-caret .75s step-end infinite;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+  
+  /* The typing effect */
+  @-moz-keyframes typing  /* Firefox */
+{
+  from { width: 0 }
+  to { width: 20% }
+}
+@-webkit-keyframes typing  /* Safari and Chrome */
+{
+  from { width: 0 }
+  to { width: 20% }
+}
+@-webkit-keyframes blink-caret  /* Safari and Chrome */
+{
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+@-moz-keyframes blink-caret  /* Firefox */
+{
+  from { width: 0 }
+  to { width: 20% }
+}

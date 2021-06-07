@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { NavigationBar } from './Navbar.js';
 import { Route,  Switch} from "react-router-dom";
-import { App } from "./App";
+import { Introduction } from "./Introduction";
 import { About } from "./About";
+import { WorkHistory } from "./WorkHistory";
+import { Projects } from "./Projects";
 import { Contact } from "./Contact";
-import { Content } from "./Content";
 import { SiteFooter } from "./SiteFooter";
+import "../static/css/General.css";
+import "../static/css/ResponsiveLayout.css";
+import "../static/css/Animation.css";
 
 
 
@@ -24,16 +28,19 @@ export default class FrameWork extends Component{
           <NavigationBar />
         </header>
         <div id='main'>
-          <App/>
-          <Content/>
+          <Introduction/>
           <About/>
+          <WorkHistory/>
+          <Projects/>
           <Contact/>
         </div>
         <footer>
+            <SiteFooter/>
             <div className="Site-Footer">
-              <SiteFooter/>
+              <p>I did not draw the art on this page! If you would like to see more of K. Clarke amazing work please visit his <a href="http://www.kenny-clarke.com/artwork/">page</a></p>
+              <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
+              <a href="https://www.vecteezy.com/free-vector/fly-fishing">Fly Fishing Vectors by Vecteezy</a>
             </div>
-            <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
         </footer>
      </div>
     );

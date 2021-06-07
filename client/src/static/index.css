@@ -2,10 +2,6 @@
   font-family:  ogg, Garamond, Sophia, "Aire Exterior", "Köhne Makina"
 }
 
-#main{
-  z-index: 1;
-}
-
 
 body {
   text-align: center;
@@ -20,6 +16,17 @@ body {
   */
 }
 
+.centered-title{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: black;
+}
+.centered-title h1{
+  font-size: 100px;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -28,10 +35,6 @@ code {
 .Contact-Section a{
   padding: 20px;
   color: inherit;
-}
-
-img{
-  margin: 5px;
 }
 
 /* About Section Specific Styling */
@@ -60,12 +63,12 @@ img{
 
 /* Navigation Bar Section Specific Styling */
 .navbar{
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0px;
   width: 100%;
-  color: black;
-  background-color: #C5C6C7;
+  color: white;
+  background-color: #0B0C10;
   font-size: 20px;
 
 }
@@ -73,19 +76,103 @@ img{
 .navbar a {
   float: left;
   display: block;
-  color: #0B0C10;
+  color: #C5C6C7;
   padding: 14px 16px;
 }
 .navbar-name{
   font-weight: bold;
-  color: #0B0C10;
+  color: #C5C6C7;
+}
+
+/*Visual Intro Styling*/
+.center-div {
+  position: relative;
+}
+
+.intro-container .trout-intro {
+  position: absolute;
+  z-index: 1;
+}
+
+.intro-container {
+  animation-name: blip-text;
+  animation-delay: 5s;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+
+}
+
+.intro-container .title-intro {
+  color: white;
+  font-size: 500%;
+  animation-name: slide-right;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+}
+
+.intro-container .title-icon {
+  animation-name: slide-left;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  height: auto;
+  width: 100%;
+}
+
+
+@keyframes slide-right {
+
+  0%{
+    margin-left: -10%;
+    opacity: 0.0;
+  }
+
+  50% {
+    margin-left: 90%;
+    opacity: 1;
+  }
+  100%{
+    margin-left: 90%;
+    opacity: 0;
+  }
+
+}
+
+@keyframes slide-left {
+
+  from {
+    margin-left: 110%;
+    opacity: 0.0;
+    transform: rotate(0deg);
+  }
+
+  to {
+    margin-left: 49%;
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes blip-text {
+  0%{
+    font-size: 100%;
+  }
+  50%{
+    font-size:150%;
+  }
+  100%{
+    font-size: 100%;
+  }
+
 }
 
 
 /* Site Footer Styling */
-
-/* Figure out how to make this inline but at far ends of the page*/
-
+.site-footer img{
+  margin: 2px;
+}
 
 .Site-Footer-Copyright, .Site-Footer-Cv, .Site-Footer-Social-Media{
   width: 33.3%;

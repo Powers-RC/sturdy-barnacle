@@ -13,7 +13,7 @@ import {
    DropdownItem} from 'reactstrap';
 import { NavLink as RRNavLink} from "react-router-dom";
 import { About } from "./About";
-
+//TODO: Redo Navbar for more themed interactiveness, not just header
  export class NavigationBar extends Component{
   constructor(props){
     super(props)
@@ -33,11 +33,12 @@ import { About } from "./About";
     render(){
       return(
         <div className="navbar">
-          <span className="navbar-name">Cameron Powers</span>
           <span>
             <a href='#visual-intro'>Home</a>
-            <a href='#content-section'>Content</a>
+            <a href='#intro-section'>Introduction</a>
             <a href='#about-section'>About</a>
+            <a href='#work-section'>Work</a>
+            <a href='#projects-section'>Projects</a>
             <a href='#contact-section'>Contact</a>
           </span>
         </div>

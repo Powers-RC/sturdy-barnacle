@@ -17,18 +17,15 @@ import React, {Component} from "react";
            <br/>
            {/* TODO: Just change these into icon links */}
            <div className="contact-links">
-             <div className="contact-mail">
-                <img src={mailIcon} alt="Mail Icon For Email Address" height="20" width="20"/>
-                <a href="mailto:powerscameron@ymail.com">powerscameron@ymail.com</a>
-             </div>
-             <div className="contact-phone">
-              <img src={phoneIcon} alt="Phone Icon" height="20" width="20"/>
-              <a href="tel:+13072159505">1 (307) 215-9505</a>
-             </div>
-             <div className="contact-web">
-              <img src={globeIcon} alt="Globe Icon" height="20" width="20"/>
-              <a href="www.powers.us" target="new">www.powers.us</a>
-             </div>
+                <a href="mailto:powerscameron@ymail.com">
+                  <img src={mailIcon} alt="Mail Icon For Email Address" height="20" width="20"/>
+                </a>
+              <a href="tel:+13072159505">
+                <img src={phoneIcon} alt="Phone Icon" height="20" width="20"/>
+              </a>
+              <a href="www.powers.us" target="new">
+                <img src={globeIcon} alt="Globe Icon" height="20" width="20"/>
+              </a>
           </div>
         </div>
        );

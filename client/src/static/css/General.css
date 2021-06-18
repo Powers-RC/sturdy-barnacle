@@ -1,6 +1,16 @@
+/* General */
 h1, h2{
     font-family: 'Oxygen', sans-serif;
 }
+body, a, h3, p{
+    font-family: 'Fira Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar */
 .navbar{
     position: fixed;
     z-index: 3;
@@ -18,17 +28,18 @@ h1, h2{
 a:visited{
     color: grey;
 }
-body, a{
-    font-family: 'Fira Sans', sans-serif;
+/* Introduction */
+.self-portrait{
+    width: 40%;
+    max-height: 100%;
+    border-radius: 30%;
+    float: right;
+    margin: 5%;
 }
-img{
-    max-width: 100%;
-    height: auto;
-}
-tr{
-    color: black;
-    width: 20%;
-    size: 10px;
+
+.intro-welcome{
+    margin: 5%;
+    width: 70%;
 }
 
 /* Contect flexbox */
@@ -39,7 +50,7 @@ tr{
 }
 .contact-mail, .contact-phone, .contact-web{
     flex-direction: column;
-    justify-content: center;
+    
 }
 /* Site Footer Styling */
 .site-footer img{

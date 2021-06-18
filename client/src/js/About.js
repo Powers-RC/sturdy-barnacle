@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 const fishIcon = require("../static/icons/fish.png");
-const portrait = require("../static/photos/portrait.jpg");
 
 export class About extends Component{
 
@@ -9,13 +8,17 @@ export class About extends Component{
       <div id="about-section" className="About-Section">
         <div className="about-title">
             <h2 className="typewriter-right">About</h2>
-            <img  src={fishIcon} alt="Fish Icon" height="50" width="50"/>
         </div>
+        <br/>
         <div className="portrait-block">
+          <h3>A little more about me...</h3>
             <p>
-                <img  src={portrait} alt="Self Portrait of Author" height="300" width="400" max-width="100%"/>
-                Testing to see if the text I am writing will float around my portrait in the about section of my webpagae.
-                <br/>
+              I have been working as a software engineer for the last two year 
+              transitioning away from analytics... and boy to I love it! Most of my 
+              time is spent getting that important frontend information to is
+              safe location. API's! As of recently I have really developed a passion
+              for mobile and frontend development as well. This is why I decided 
+              to FINALLY build my own webpage.  
             </p>
         </div>
       </div>

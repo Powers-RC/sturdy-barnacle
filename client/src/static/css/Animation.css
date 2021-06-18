@@ -5,53 +5,34 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   float: left;
-  animation: 
+  -webkit-animation:
     typing 3.5s steps(30, end),
     blink-caret .75s step-end infinite;
 }
 
-
-.test-class{
-  color: red;
-  size: 50;
-  align-items: left;
-  animation: 
-    outward-line 3.5s linear infinite,
+.line-animation-left{
+    border: 1px solid #000; 
+    float: left;
+    margin: auto; 
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+    -webkit-animation:
+      outward-line 3.5s linear 0s 1 normal forwards;
 }
 
 .typewriter-right {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  float: right;
-  animation: 
-    typing 3.5s steps(30, end) backwards,
-    blink-caret .75s step-end infinite;
-}
-  
-@keyframes typing {
-  from { width: 0 }
-  to { width: 10% }
-}
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; }
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    float: right;
+    -webkit-animation:
+        typing 3.5s steps(30, end) backwards,
+        blink-caret .75s step-end infinite;
 }
 
-@keyframes outward-line {
-  from { width: 0% }
-  to { width: 50% }
-}
-
-  
-  /* The typing effect */
-  @-moz-keyframes typing  /* Firefox */
-{
-  from { width: 0 }
-  to { width: 10% }
-}
+/* The typing effect */
 @-webkit-keyframes typing  /* Safari and Chrome */
 {
   from { width: 0 }
@@ -62,19 +43,10 @@
   from, to { border-color: transparent }
   50% { border-color: black; }
 }
-@-moz-keyframes blink-caret  /* Firefox */
-{
-  from, to { border-color: transparent }
-  50% { border-color: black; }
-}
-
 @-webkit-keyframes outward-line  /* Safari and Chrome */
 {
-  from { width: 0 }
-  to { width: 20% }
+  from { width: 0; }
+  to { width: 20%; }
 }
-@-moz-keyframes outward-line  /* Firefox */
-{
-  from { width: 0 }
-  to { width: 20% }
-}
+
+  

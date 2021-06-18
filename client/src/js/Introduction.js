@@ -12,6 +12,7 @@ export class Introduction extends Component {
         </div>
         <div className="intro-container">
           <span>
+            <hr className="line-animation-left"/>
             <h2 className="typewriter-left">Welcome</h2>
           </span>
           <br/>

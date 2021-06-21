@@ -7,7 +7,8 @@ export class Projects extends React.Component{
   render(){
     return(
       <div id="projects-section">
-        <div>
+        <div className="animation-separator">
+            <hr className="line-animation-right"/>
           <h2 className="typewriter-right">Projects</h2>
         </div>
         <div>

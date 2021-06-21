@@ -20,6 +20,14 @@
 .line-animation-left{
   border: 1px solid #000; 
   float: left;
+  margin-top: 4%;
+  -webkit-animation:
+    outward-line 3.5s linear 0s 1 normal forwards;
+}
+
+.line-animation-right{
+  border: 1px solid #000; 
+  float: right;
   margin-top: 2%;
   -webkit-animation:
     outward-line 3.5s linear 0s 1 normal forwards;
@@ -32,6 +40,7 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   float: right;
+  margin-right: 1%;
   -webkit-animation:
       typing 3.5s steps(30, end) backwards,
       blink-caret .75s step-end infinite;

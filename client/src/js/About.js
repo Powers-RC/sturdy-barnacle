@@ -7,7 +7,10 @@ export class About extends Component{
     return(
       <div id="about-section" className="About-Section">
         <div className="about-title">
-            <h2 className="typewriter-right">About</h2>
+            <div className="animation-separator">
+                <hr className="line-animation-right"/>
+                <h2 className="typewriter-right">About</h2>
+            </div>
         </div>
         <br/>
         <div className="portrait-block">

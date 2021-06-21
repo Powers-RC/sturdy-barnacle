@@ -11,10 +11,10 @@ export class Introduction extends Component {
           <img src={trout} alt="Trout Image" width="100%"/>
         </div>
         <div className="intro-container">
-          <span>
+          <div className="animation-separator">
             <hr className="line-animation-left"/>
             <h2 className="typewriter-left">Welcome</h2>
-          </span>
+          </div>
           <br/>
           <div className="intro-content">
             <img className="self-portrait" src={portrait} alt="Self Portrait of Author"/>

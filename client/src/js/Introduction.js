@@ -13,7 +13,7 @@ export class Introduction extends Component {
         <div className="intro-container">
           <div className="animation-separator">
             <hr className="line-animation-left"/>
-            <h2 className="typewriter-left">Welcome</h2>
+            <h2 className="typewriter-left">Introduction</h2>
           </div>
           <br/>
           <div className="intro-content">

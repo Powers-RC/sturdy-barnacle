@@ -2,14 +2,30 @@ import React, {Component} from "react";
 const fishIcon = require("../static/icons/fish.png");
 
 export class About extends Component{
+    componentDidMount(){
+      // Create the observer
+      const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting && entry.target.classList.contains('about-line-animation')) {
+            entry.target.classList.add('line-animation-right');
+          } else if(entry.isIntersecting && entry.target.classList.contains('about-text-animation'))
+            entry.target.classList.add('typewriter-right-about');
+        });
+      });
+
+      observer.observe(document.querySelector('.about-text-animation'));
+      observer.observe(document.querySelector('.about-line-animation'));
+    }
 
   render(){
     return(
       <div id="about-section" className="About-Section">
         <div className="about-title">
             <div className="animation-separator">
-                <hr className="line-animation-right"/>
-                <h2 className="typewriter-right">About</h2>
+                <hr className="about-line-animation"/>
+                <h2 className="about-text-animation">About</h2>
             </div>
         </div>
         <br/>

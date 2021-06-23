@@ -19,7 +19,35 @@
     blink-caret .75s step-end infinite 2s;
 }
 
-.typewriter-right {
+.typewriter-left-work-history {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  float: left;
+  margin-left: 1%;
+  -webkit-animation:
+    hide-header 2s forwards 0,
+    typing-work-history 3.5s steps(30, end) forwards 2s,
+    blink-caret .75s step-end infinite 2s;
+}
+
+.typewriter-left-contact {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  float: left;
+  margin-left: 1%;
+  -webkit-animation:
+    hide-header 2s forwards 0,
+    typing-contact 3.5s steps(30, end) forwards 2s,
+    blink-caret .75s step-end infinite 2s;
+}
+
+.typewriter-right-about {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -29,7 +57,21 @@
   margin-right: 1%;
   -webkit-animation:
       hide-header 2s backwards 0,
-      typing 3.5s steps(30, end) backwards 2s,
+      typing-about 3.5s steps(30, end) backwards 2s,
+      blink-caret .75s step-end infinite 2s;
+}
+
+.typewriter-right-projects {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: .15em; /* Adjust as needed */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  float: right;
+  margin-right: 1%;
+  -webkit-animation:
+      hide-header 2s backwards 0,
+      typing-projects 3.5s steps(30, end) backwards 2s,
       blink-caret .75s step-end infinite 2s;
 }
 
@@ -53,7 +95,27 @@
 @-webkit-keyframes typing  /* Safari and Chrome */
 {
   from { width: 0; }
-  to { width: 20%; }
+  to { width: 22%; }
+}
+@-webkit-keyframes typing-work-history  /* Safari and Chrome */
+{
+  from { width: 0; }
+  to { width: 23%; }
+}
+@-webkit-keyframes typing-contact  /* Safari and Chrome */
+{
+  from { width: 0; }
+  to { width: 14%; }
+}
+@-webkit-keyframes typing-about  /* Safari and Chrome */
+{
+  from { width: 0; }
+  to { width: 11%; }
+}
+@-webkit-keyframes typing-projects  /* Safari and Chrome */
+{
+  from { width: 0; }
+  to { width: 14%; }
 }
 @-webkit-keyframes blink-caret  /* Safari and Chrome */
 {

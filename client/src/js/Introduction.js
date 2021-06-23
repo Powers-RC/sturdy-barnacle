@@ -3,6 +3,22 @@ import trout from '../static/photos/troutImage.jpg';
 import portrait from "../static/photos/portrait.jpg";
 
 export class Introduction extends Component {
+    componentDidMount(){
+      // Create the observer
+      const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting && entry.target.classList.contains('intro-line-animation')) {
+            entry.target.classList.add('line-animation-left');
+          } else if(entry.isIntersecting && entry.target.classList.contains('intro-text-animation'))
+            entry.target.classList.add('typewriter-left');
+        });
+      });
+
+      observer.observe(document.querySelector('.intro-text-animation'));
+      observer.observe(document.querySelector('.intro-line-animation'));
+    }
 
   render() {
     return (
@@ -12,8 +28,8 @@ export class Introduction extends Component {
         </div>
         <div className="intro-container">
           <div className="animation-separator">
-            <hr className="line-animation-left"/>
-            <h2 className="typewriter-left">Introduction</h2>
+            <hr className="intro-line-animation"/>
+            <h2 className="intro-text-animation">Introduction</h2>
           </div>
           <br/>
           <div className="intro-content">

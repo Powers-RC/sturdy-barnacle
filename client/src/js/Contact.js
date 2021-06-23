@@ -3,15 +3,32 @@ import React, {Component} from "react";
    const globeIcon = require("..//static/icons/earth.png");
    const phoneIcon = require("..//static/icons/smartphone.png");
 
-
    export class Contact extends Component{
+
+    componentDidMount(){
+      // Create the observer
+      const observer = new IntersectionObserver(entries => {
+        // Loop over the entries
+        entries.forEach(entry => {
+          // If the element is visible
+          if (entry.isIntersecting && entry.target.classList.contains('contact-line-animation')) {
+            entry.target.classList.add('line-animation-left');
+          } else if(entry.isIntersecting && entry.target.classList.contains('contact-text-animation'))
+            entry.target.classList.add('typewriter-left-contact');
+        });
+      });
+
+      observer.observe(document.querySelector('.contact-text-animation'));
+      observer.observe(document.querySelector('.contact-line-animation'));
+    }
+    
      render(){
        return(
          <div id="contact-section" className="Contact-Section">
             <div className="Contact-Heading">
                 <div className="animation-separator">
-                    <hr className="line-animation-left"/>
-                    <h2 className="typewriter-left">Contact</h2>
+                    <hr className="contact-line-animation"/>
+                    <h2 className="contact-text-animation">Contact</h2>
                 </div>
             </div>
             <br/>

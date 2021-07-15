@@ -95,7 +95,7 @@
 @-webkit-keyframes typing  /* Safari and Chrome */
 {
   from { width: 0; }
-  to { width: 22%; }
+  to { width: 100%; }
 }
 @-webkit-keyframes typing-work-history  /* Safari and Chrome */
 {

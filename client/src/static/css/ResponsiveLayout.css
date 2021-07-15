@@ -8,3 +8,19 @@ div{
     display: flex;
     flex-direction: column;
 }
+
+/* Animation Responseive Containers*/
+.animation-responsive-container{
+    display:flex;
+    flex-direction:row;
+    align-items: top;
+}
+.animation-responsive-text{
+    flex-grow:0;
+    width: auto;
+}
+.animation-responsive-line{
+    flex-grow:0;
+    height: 1px;
+    background-color: #000;
+}

@@ -2,6 +2,9 @@
 h1, h2{
     font-family: 'Oxygen', sans-serif;
 }
+h2{
+    font-size: 10vm;
+}
 body, a, h3, p{
     font-family: 'Fira Sans', sans-serif;
 }
@@ -36,7 +39,6 @@ a:visited{
     float: right;
     margin: 5%;
 }
-
 .intro-welcome{
     margin: 5%;
     width: 70%;

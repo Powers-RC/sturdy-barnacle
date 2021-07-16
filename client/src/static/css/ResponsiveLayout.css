@@ -14,6 +14,15 @@ div{
     display:flex;
     flex-direction:row;
     align-items: top;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.animation-responsive-container-right{
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: top;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .animation-responsive-text{
     flex-grow:0;

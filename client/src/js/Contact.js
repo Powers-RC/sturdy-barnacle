@@ -14,7 +14,7 @@ import React, {Component} from "react";
           if (entry.isIntersecting && entry.target.classList.contains('contact-line-animation')) {
             entry.target.classList.add('line-animation-left');
           } else if(entry.isIntersecting && entry.target.classList.contains('contact-text-animation'))
-            entry.target.classList.add('typewriter-left-contact');
+            entry.target.classList.add('typewriter-left');
         });
       });
 
@@ -26,9 +26,11 @@ import React, {Component} from "react";
        return(
          <div id="contact-section" className="Contact-Section">
             <div className="Contact-Heading">
-                <div className="animation-separator">
-                    <hr className="contact-line-animation"/>
-                    <h2 className="contact-text-animation">Contact</h2>
+                <div className="animation-responsive-container">
+                    <div className="contact-line-animation animation-responsive-line"></div>
+                    <div className="animation-responsive-text">
+                      <h2 className="contact-text-animation">Contact</h2>
+                    </div>
                 </div>
             </div>
             <br/>

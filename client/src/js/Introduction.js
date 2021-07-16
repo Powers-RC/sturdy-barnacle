@@ -16,8 +16,8 @@ export class Introduction extends Component {
       });
     });
 
-    observer.observe(document.querySelector('.intro-text-animation'));
     observer.observe(document.querySelector('.intro-line-animation'));
+    observer.observe(document.querySelector('.intro-text-animation'));
   }
 
   render() {

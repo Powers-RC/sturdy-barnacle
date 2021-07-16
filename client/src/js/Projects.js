@@ -14,28 +14,30 @@ export class Projects extends React.Component{
           if (entry.isIntersecting && entry.target.classList.contains('project-line-animation')) {
             entry.target.classList.add('line-animation-right');
           } else if(entry.isIntersecting && entry.target.classList.contains('project-text-animation')) {
-            entry.target.classList.add('typewriter-right-projects');
+            entry.target.classList.add('typewriter-right');
           }
           //TODO: I think this needs to be in a component did update to remove class
           if(projectLine){
             projectLine.classList.remove('line-animation-right');
           }
           if(projectText){
-            projectText.classList.remove('typewriter-right-projects');
+            projectText.classList.remove('typewriter-right');
           }
         });
       });
 
-      observer.observe(document.querySelector('.project-text-animation'));
       observer.observe(document.querySelector('.project-line-animation'));
+      observer.observe(document.querySelector('.project-text-animation'));
     }
 
   render(){
     return(
       <div id="projects-section">
-        <div className="animation-separator">
-            <hr className="project-line-animation"/>
-          <h2 className="project-text-animation">Projects</h2>
+        <div className="animation-responsive-container-right">
+            <div className="project-line-animation animation-responsive-line"></div>
+            <div className="animation-responsive-text">
+              <h2 className="project-text-animation">Projects</h2>
+            </div>
         </div>
         <div>
           <CarouselProvider

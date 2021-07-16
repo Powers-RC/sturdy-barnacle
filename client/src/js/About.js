@@ -11,21 +11,23 @@ export class About extends Component{
           if (entry.isIntersecting && entry.target.classList.contains('about-line-animation')) {
             entry.target.classList.add('line-animation-right');
           } else if(entry.isIntersecting && entry.target.classList.contains('about-text-animation'))
-            entry.target.classList.add('typewriter-right-about');
+            entry.target.classList.add('typewriter-right');
         });
       });
 
-      observer.observe(document.querySelector('.about-text-animation'));
       observer.observe(document.querySelector('.about-line-animation'));
+      observer.observe(document.querySelector('.about-text-animation'));
     }
 
   render(){
     return(
       <div id="about-section" className="About-Section">
         <div className="about-title">
-            <div className="animation-separator">
-                <hr className="about-line-animation"/>
-                <h2 className="about-text-animation">About</h2>
+            <div className="animation-responsive-container-right">
+                <div className="about-line-animation animation-responsive-line"></div>
+                <div className="animation-responsive-text">
+                  <h2 className="about-text-animation">About</h2>
+                </div>
             </div>
         </div>
         <br/>

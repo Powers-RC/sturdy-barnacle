@@ -10,20 +10,22 @@ export class WorkHistory extends Component {
           if (entry.isIntersecting && entry.target.classList.contains('work-line-animation')) {
             entry.target.classList.add('line-animation-left');
           } else if(entry.isIntersecting && entry.target.classList.contains('work-text-animation'))
-            entry.target.classList.add('typewriter-left-work-history');
+            entry.target.classList.add('typewriter-left');
         });
       });
 
-      observer.observe(document.querySelector('.work-text-animation'));
       observer.observe(document.querySelector('.work-line-animation'));
+      observer.observe(document.querySelector('.work-text-animation'));
     }
 
   render() {
     return (
         <div id="work-section">
-            <div className="animation-separator">
-                <hr className="work-line-animation"/>
-                <h2 className="work-text-animation">Work History</h2>
+            <div className="animation-responsive-container">
+                <div className="work-line-animation animation-responsive-line"></div>
+                <div className="animation-responsive-text">
+                  <h2 className="work-text-animation">Work History</h2>
+                </div>
             </div>
           <div>
 

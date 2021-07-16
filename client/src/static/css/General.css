@@ -28,8 +28,9 @@ img{
    text-decoration: none;
    color: black
 }
-a:visited{
-    color: grey;
+.navbar a:hover{
+    /*color: grey;*/
+    color: #cc5500;
 }
 /* Introduction */
 .self-portrait{
@@ -38,6 +39,11 @@ a:visited{
     border-radius: 30%;
     float: right;
     margin: 5%;
+    filter: grayscale(100%);
+    
+}
+.self-portrait:hover{
+    filter: grayscale(0%);
 }
 .intro-welcome{
     margin: 5%;
@@ -62,11 +68,29 @@ a:visited{
   .Site-Footer-Copyright, .Site-Footer-Cv, .Site-Footer-Social-Media{
     width: 33.3%;
     float: left;
+    display: flex;
+  }
+
+  .Site-Footer-Cv, .Site-Footer-Social-Media{
+    width: 33.3%;
+    float: left;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .Social-Media-Llinks{
+      flex-direction: row;
   }
   
+.Social-Media-Links a:hover{
+    background-color: #cc5500;
+    border-radius: 50%;
+}
   
   footer{
       font-size: 8px;
       padding: 50px;
       text-align: center;
   }
+

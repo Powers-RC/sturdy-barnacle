@@ -40,12 +40,6 @@ import React, {Component} from "react";
                 <a href="mailto:powerscameron@ymail.com">
                   <img src={mailIcon} alt="Mail Icon For Email Address" height="20" width="20"/>
                 </a>
-              <a href="tel:+13072159505">
-                <img src={phoneIcon} alt="Phone Icon" height="20" width="20"/>
-              </a>
-              <a href="www.powers.us" target="new">
-                <img src={globeIcon} alt="Globe Icon" height="20" width="20"/>
-              </a>
             </div>
         </div>
        );

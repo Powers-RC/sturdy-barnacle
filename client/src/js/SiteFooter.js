@@ -14,10 +14,14 @@ export class SiteFooter extends Component{
           <p className="Site-Footer-Copyright">&copy; Cameron Powers</p>
           <p className="Site-Footer-Cv">CV<a href="https://drive.google.com/open?id=1mR-IAjk5cQl0v2cEdhELT3u7oomp3H3J"><img src={folderIcon} alt="Resume/CV Icon" height="15" width="15"/></a></p>
           <p className="Site-Footer-Social-Media">
-              <span>Follow me on social media:</span>
-              <a href="https://www.linkedin.com/in/powerscameron/" ><img src={linkedinIcon} alt="Linkedin Icon" height="15" width="15"/></a>
-              <a href="https://www.instagram.com/powers_rc/?hl=en"><img src={instagramIcon} alt="Instagram Icon" height="15" width="15"/></a>
-              <a href="https://twitter.com/PowersCameron"><img src={twitterIcon} alt="Twitter Icon" height="15" width="15"/></a>
+              <div>
+                <span>Follow me on social media:</span>
+              </div>
+              <div className="Social-Media-Links">
+                <a href="https://www.linkedin.com/in/powerscameron/" ><img src={linkedinIcon} alt="Linkedin Icon" height="15" width="15"/></a>
+                <a href="https://www.instagram.com/powers_rc/?hl=en"><img src={instagramIcon} alt="Instagram Icon" height="15" width="15"/></a>
+                <a href="https://twitter.com/PowersCameron"><img src={twitterIcon} alt="Twitter Icon" height="15" width="15"/></a>
+              </div>
           </p>
       </div>
     );

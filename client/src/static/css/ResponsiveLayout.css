@@ -9,6 +9,34 @@ div{
     flex-direction: column;
 }
 
+/*Navbar Dynamic Drop Donw */
+/*Displays Icon When Screen Size Is Small*/
+@media screen and (max-width: 600px) {
+    .navbar {
+      display: none;
+    }
+    .dynamicNavIcon {
+        float: left;
+        display: block;
+    }
+}
+
+  /*When responsive class is added formats nav to drop down*/
+  @media screen and (max-width: 600px) {
+    .dynamicNav.responsive .navbar {
+      display: block;
+      top: 10px
+    }
+
+    .dynamicNav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+
+
 /* Animation Responseive Containers*/
 .animation-responsive-container{
     display:flex;

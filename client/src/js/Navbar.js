@@ -1,46 +1,58 @@
 import React, { Component } from 'react';
-import {
- Collapse,
-   Navbar,
-   NavbarToggler,
-   NavbarBrand,
-   Nav,
-   NavItem,
-   NavLink,
-   UncontrolledDropdown,
-   DropdownToggle,
-   DropdownMenu,
-   DropdownItem} from 'reactstrap';
-import { NavLink as RRNavLink} from "react-router-dom";
-import { About } from "./About";
-//TODO: Redo Navbar for more themed interactiveness, not just header
  export class NavigationBar extends Component{
   constructor(props){
     super(props)
 
-    this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.toggleNavbarIcon = this.toggleNavbarIcon.bind(this);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     this.state = {
-      collapsed:true
+      collapsed:true,
+      isMobile:false,
+      windowWidth:null,
+      windowHeight: null
     }
   }
 
-   toggleNavbar() {
-        this.setState({
-          collapsed: !this.state.collapsed
-        });
+    toggleNavbarIcon() {
+      let x = document.getElementById("rootNav");
+      if (x.className === "dynamicNav") {
+        x.className += " responsive";
+      } else {
+        x.className = "dynamicNav";
+      }
+    }
+
+    updateWindowDimensions(){
+      this.setState({windowWidth: window.innerWidth, windowHeight: window.innerHeight});
+    }
+
+    componentDidMount(){
+      this.updateWindowDimensions();
+      window.addEventListener('resize', this.updateWindowDimensions);
+    }
+
+    componentWillUnmount(){
+      window.removeEventListener('resize', this.updateWindowDimensions);
     }
 
     render(){
       return(
-        <div className="navbar">
-          <span>
-            <a href='#visual-intro'>Home</a>
-            <a href='#intro-section'>Introduction</a>
-            <a href='#about-section'>About</a>
-            <a href='#work-section'>Work</a>
-            <a href='#projects-section'>Projects</a>
-            <a href='#contact-section'>Contact</a>
-          </span>
+        <div class='dynamicNav' id="rootNav">
+          <div className="test">
+            <a href="javascript:void(0);" class="icon" onClick={this.toggleNavbarIcon}>
+              &#9776;
+            </a>
+          </div>
+          <div className="navbar">
+            <span>
+              <a href='#visual-intro'>Home</a>
+              <a href='#intro-section'>Introduction</a>
+              <a href='#about-section'>About</a>
+              <a href='#work-section'>Work</a>
+              <a href='#projects-section'>Projects</a>
+              <a href='#contact-section'>Contact</a>
+            </span>
+          </div>
         </div>
       );
     }

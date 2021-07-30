@@ -14,12 +14,10 @@ img{
 }
 
 /* Navigation Bar */
-.navbar{
-    position: fixed;
+.dynamicNav{
     z-index: 3;
     background-color: white;
-    top: 0%;
-    padding: 0.5%;
+    width: 100%;
 }
 .navbar a{
    display: block;
@@ -28,10 +26,35 @@ img{
    text-decoration: none;
    color: black
 }
+
+.dynamicNav a.icon{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 0.5%;
+    color: black;
+    top:0%;
+}
+
+.dynamicNavIcon a.icon{
+    display: none;
+    padding: 0.5%;
+}
+
+.navbar span{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 1%;
+    top: 25px;
+}
+
 .navbar a:hover{
     /*color: grey;*/
     color: #cc5500;
 }
+
+
 /* Introduction */
 .self-portrait{
     width: 40%;

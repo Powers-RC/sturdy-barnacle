@@ -15,7 +15,7 @@ div{
     .navbar {
       display: none;
     }
-    .dynamicNavIcon {
+    .dynamicNavIcon a.icon{
         float: left;
         display: block;
     }
@@ -32,6 +32,10 @@ div{
       float: none;
       display: block;
       text-align: left;
+    }
+
+    .navbar span{
+        top: 25px;
     }
 }
 

@@ -38,7 +38,7 @@ import React, { Component } from 'react';
     render(){
       return(
         <div class='dynamicNav' id="rootNav">
-          <div className="test">
+          <div className="dynamicNavIcon">
             <a href="javascript:void(0);" class="icon" onClick={this.toggleNavbarIcon}>
               &#9776;
             </a>

@@ -46,7 +46,7 @@ img{
     width: 100%;
     background-color: white;
     padding: 1%;
-    top: 25px;
+    top:0%;
 }
 
 .navbar a:hover{
@@ -73,7 +73,7 @@ img{
     width: 70%;
 }
 
-/* Contect flexbox */
+/* Contact*/
 .contact-links{
     display: flex;
     flex-direction: row;
@@ -83,17 +83,17 @@ img{
     flex-direction: column;
     
 }
+
+
 /* Site Footer Styling */
 .site-footer img{
     margin: 2px;
   }
-  
   .Site-Footer-Copyright, .Site-Footer-Cv, .Site-Footer-Social-Media{
     width: 33.3%;
     float: left;
     display: flex;
   }
-
   .Site-Footer-Cv, .Site-Footer-Social-Media{
     width: 33.3%;
     float: left;
@@ -101,19 +101,16 @@ img{
     flex-direction: column;
     display: flex;
   }
-
   .Social-Media-Llinks{
       flex-direction: row;
   }
-  
 .Social-Media-Links a:hover{
     background-color: #cc5500;
     border-radius: 50%;
 }
-  
-  footer{
-      font-size: 8px;
-      padding: 50px;
-      text-align: center;
-  }
+footer{
+    font-size: 8px;
+    padding: 50px;
+    text-align: center;
+}
 

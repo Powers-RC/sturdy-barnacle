@@ -45,7 +45,6 @@ import React, { Component } from 'react';
           </div>
           <div className="navbar">
             <span>
-              <a href='#visual-intro'>Home</a>
               <a href='#intro-section'>Introduction</a>
               <a href='#about-section'>About</a>
               <a href='#work-section'>Work</a>

@@ -79,11 +79,13 @@ img{
     flex-direction: row;
     justify-content: center;
 }
+.contact-links a{
+    display: flex;
+    justify-content: center;
+}
 .contact-mail, .contact-phone, .contact-web{
     flex-direction: column;
-    
 }
-
 
 /* Site Footer Styling */
 .site-footer img{

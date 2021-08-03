@@ -37,11 +37,9 @@ import React, {Component} from "react";
             <p>If you have any questions or would like to know more, please reach out.</p>
             <br/>
             <div className="contact-links">
-              <div className="contact-triangle">
                 <a href="mailto:powerscameron@ymail.com">
-                  <img src={mailIcon} alt="Mail Icon For Email Address" height="20" width="20"/>
+                  <img src={mailIcon} alt="Mail Icon For Email Address" height="10%" width="10%"/>
                 </a>
-              </div>
             </div>
         </div>
        );

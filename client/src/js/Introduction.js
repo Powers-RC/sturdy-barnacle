@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import trout from '../static/photos/troutImage.jpg';
-import portrait from "../static/photos/portrait.jpg";
+import portrait from "../static/photos/weddingPortrait.jpg";
 
 export class Introduction extends Component {
   componentDidMount() {

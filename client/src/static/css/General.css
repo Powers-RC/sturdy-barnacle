@@ -51,7 +51,7 @@ img{
 
 .navbar a:hover{
     /*color: grey;*/
-    color: #cc5500;
+    color: #a15727;
 }
 
 
@@ -107,7 +107,7 @@ img{
       flex-direction: row;
   }
 .Social-Media-Links a:hover{
-    background-color: #cc5500;
+    background-color: #a15727;
     border-radius: 50%;
 }
 footer{

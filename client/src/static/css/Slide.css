@@ -1,0 +1,17 @@
+.project-container{
+    background-color: black;
+    color: white;
+    width: 50%;
+    padding: 1%;
+    margin: 1%;
+}
+.project-title{
+    color: #a15727;
+}
+.project-description{
+    background-color: #a15727;
+    padding: 1%;
+}
+.project-depiction{
+    position: relative;
+}

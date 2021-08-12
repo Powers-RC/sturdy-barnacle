@@ -2,6 +2,8 @@ import React from 'react';
 import {Slide} from 'pure-react-carousel'
 
 const githubIcon = require("../../static/icons/github.png");
+const personWebPagePhoto= require("../../static/photos/personalWebPage.png");
+
 
 export class PersonWebSiteSlide extends React.Component{
 
@@ -9,9 +11,11 @@ export class PersonWebSiteSlide extends React.Component{
         return(
             <Slide index={0}>
                 <div className="project-container">
-                    <div>
-                        <h3 className="project-title">Fun Project Name</h3>
+                    <div className="project-title-container">
+                        <h3 className="project-title">Project Name</h3>
                         <h3>Strudy Barnicle</h3>
+                    </div>
+                    <div className="project-details">
                         <div className="project-description">
                             <p>
                                 Most of my work thus far has been strictly employer directed, 
@@ -21,9 +25,9 @@ export class PersonWebSiteSlide extends React.Component{
                             </p>
                         </div>
                         <div className="project-depiction">
-                            {/* <img src={} alt="Personal site project image"/> */}
+                            <img className="project-picture" src={personWebPagePhoto} alt="Personal site project"/>
                             <h4>Tools</h4>
-                            <ul>
+                            <ul className="project-tech-stack">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>React.js</li>

@@ -1,17 +1,44 @@
 .project-container{
-    background-color: black;
     color: white;
-    width: 50%;
+    width: 95%;
     padding: 1%;
     margin: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.project-title-container{
+    background-color: black;
+    padding: 1%;
 }
 .project-title{
     color: #a15727;
 }
+.project-details{
+    background-color: grey;
+    display: flex;
+}
 .project-description{
+    flex: 1;
+    flex-direction: row;
     background-color: #a15727;
     padding: 1%;
 }
 .project-depiction{
+    flex: 2;
     position: relative;
+    left: 5%;
+    top: 5%;
+}
+.project-picture{
+    height: 80%;
+    width: 80%;
+}
+.project-tech-stack li{
+    display: inline;
+}
+.project-depiction li{
+    padding: 2%;
+    margin: 2%;
+    border: solid 1px white;
+    background-color: #a15727;
 }

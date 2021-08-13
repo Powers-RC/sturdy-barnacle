@@ -8,6 +8,13 @@ export class WorkHistory extends Component {
         entries.forEach(entry => {
           // If the element is visible
           if (entry.isIntersecting && entry.target.classList.contains('work-line-animation')) {
+            //Update url to work history section
+            let pageState = document.getElementById("work-section").innerHTML,
+              title = "Work Page",
+              urlPath = window.location.href;
+
+            let newUrlPath = urlPath.split("#")[0] + "#work-section";
+            window.history.pushState({"html":pageState}, title, newUrlPath);
             entry.target.classList.add('line-animation-left');
           } else if(entry.isIntersecting && entry.target.classList.contains('work-text-animation'))
             entry.target.classList.add('typewriter-left');

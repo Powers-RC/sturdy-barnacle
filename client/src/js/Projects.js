@@ -16,6 +16,13 @@ export class Projects extends React.Component {
         let projectText = entry.target.querySelector('project-text-animation')
         // If the element is visible
         if (entry.isIntersecting && entry.target.classList.contains('project-line-animation')) {
+            //Update url to projects section
+            let pageState = document.getElementById("projects-section").innerHTML,
+              title = "Projects Page",
+              urlPath = window.location.href;
+
+            let newUrlPath = urlPath.split("#")[0] + "#projects-section";
+            window.history.pushState({"html":pageState}, title, newUrlPath);
           entry.target.classList.add('line-animation-right');
         } else if (entry.isIntersecting && entry.target.classList.contains('project-text-animation')) {
           entry.target.classList.add('typewriter-right');

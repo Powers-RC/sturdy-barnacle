@@ -13,6 +13,13 @@ import React, {Component} from "react";
           // If the element is visible
           if (entry.isIntersecting && entry.target.classList.contains('contact-line-animation')) {
             entry.target.classList.add('line-animation-left');
+            //Update url to contact section
+            let pageState = document.getElementById("contact-section").innerHTML,
+              title = "Contact Page",
+              urlPath = window.location.href;
+
+            let newUrlPath = urlPath.split("#")[0] + "#contact-section";
+            window.history.pushState({"html":pageState}, title, newUrlPath);
           } else if(entry.isIntersecting && entry.target.classList.contains('contact-text-animation'))
             entry.target.classList.add('typewriter-left');
         });

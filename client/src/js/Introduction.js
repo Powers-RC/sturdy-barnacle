@@ -10,6 +10,13 @@ export class Introduction extends Component {
       entries.forEach(entry => {
         // If the element is visible
         if (entry.isIntersecting && entry.target.classList.contains('intro-line-animation')) {
+            //Update url to intro section
+            let pageState = document.getElementById("intro-section").innerHTML,
+              title = "Introduction Page",
+              urlPath = window.location.href;
+
+            let newUrlPath = urlPath.split("#")[0] + "#intro-section";
+            window.history.pushState({"html":pageState}, title, newUrlPath);
           entry.target.classList.add('line-animation-left');
         } else if (entry.isIntersecting && entry.target.classList.contains('intro-text-animation'))
           entry.target.classList.add('typewriter-left');

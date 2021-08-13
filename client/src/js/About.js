@@ -9,6 +9,13 @@ export class About extends Component{
         entries.forEach(entry => {
           // If the element is visible
           if (entry.isIntersecting && entry.target.classList.contains('about-line-animation')) {
+            //Update url to about section
+            let pageState = document.getElementById("about-section").innerHTML,
+              title = "About Page",
+              urlPath = window.location.href;
+
+            let newUrlPath = urlPath.split("#")[0] + "#about-section";
+            window.history.pushState({"html":pageState}, title, newUrlPath);
             entry.target.classList.add('line-animation-right');
           } else if(entry.isIntersecting && entry.target.classList.contains('about-text-animation'))
             entry.target.classList.add('typewriter-right');

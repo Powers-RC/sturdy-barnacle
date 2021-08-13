@@ -20,14 +20,19 @@
 .project-description{
     flex: 1;
     flex-direction: row;
-    background-color: #a15727;
     padding: 1%;
+}
+.project-description p{
+    background-color: #a15727;
+    border: solid 1px white;
+    padding: 10%;
+    margin: 1%;
 }
 .project-depiction{
     flex: 2;
     position: relative;
     left: 5%;
-    top: 5%;
+    top: 10px;
 }
 .project-picture{
     height: 80%;
@@ -35,8 +40,9 @@
 }
 .project-tech-stack li{
     display: inline;
+    padding-left: 0%;
 }
-.project-depiction li{
+.project-description li{
     padding: 2%;
     margin: 2%;
     border: solid 1px white;

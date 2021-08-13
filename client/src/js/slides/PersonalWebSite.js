@@ -13,7 +13,7 @@ export class PersonWebSiteSlide extends React.Component{
                 <div className="project-container">
                     <div className="project-title-container">
                         <h3 className="project-title">Project Name</h3>
-                        <h3>Strudy Barnicle</h3>
+                        <h2>Strudy Barnicle</h2>
                     </div>
                     <div className="project-details">
                         <div className="project-description">
@@ -23,18 +23,20 @@ export class PersonWebSiteSlide extends React.Component{
                                 from inspiration to creation. This site is the first step in displaying the works to
                                 come.
                             </p>
-                        </div>
-                        <div className="project-depiction">
-                            <img className="project-picture" src={personWebPagePhoto} alt="Personal site project"/>
                             <h4>Tools</h4>
                             <ul className="project-tech-stack">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>React.js</li>
                             </ul>
-                            <a href="https://github.com/Powers-RC/sturdy-barnacle">
-                                <img src={githubIcon} alt="Github Link To Personal Project" height="3%" width="3%"/>
-                            </a>
+                            <div>
+                                <a href="https://github.com/Powers-RC/sturdy-barnacle">
+                                    <img src={githubIcon} alt="Github Link To Personal Project" height="3%" width="3%"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="project-depiction">
+                            <img className="project-picture" src={personWebPagePhoto} alt="Personal site project"/>
                         </div>
                     </div>
                 </div>

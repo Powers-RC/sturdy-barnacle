@@ -28,14 +28,14 @@
 
 .line-animation-left{
   float: left;
-  margin-top: 2%;
+  margin-top: 18px;
   -webkit-animation:
     outward-line 2s linear 0s 1 normal forwards;
 }
 
 .line-animation-right{
   float: right;
-  margin-top: 2%;
+  margin-top: 18px;
   -webkit-animation:
     outward-line 2s linear 0s 1 normal forwards;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import {Slide} from 'pure-react-carousel'
 
 const githubIcon = require("../../static/icons/github.png");
-const personWebPagePhoto= require("../../static/photos/personalWebPage.png");
+const personWebPagePhoto= require("../../static/photos/personalWebPage2.png");
 
 
 export class PersonWebSiteSlide extends React.Component{
@@ -23,15 +23,15 @@ export class PersonWebSiteSlide extends React.Component{
                                 from inspiration to creation. This site is the first step in displaying the works to
                                 come.
                             </p>
-                            <h4>Tools</h4>
+                            <h3>Tools</h3>
                             <ul className="project-tech-stack">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>React.js</li>
                             </ul>
-                            <div>
+                            <div className="project-github-link">
                                 <a href="https://github.com/Powers-RC/sturdy-barnacle">
-                                    <img src={githubIcon} alt="Github Link To Personal Project" height="3%" width="3%"/>
+                                    <img src={githubIcon} alt="Github Link To Personal Project" height="10%" width="10%"/>
                                 </a>
                             </div>
                         </div>

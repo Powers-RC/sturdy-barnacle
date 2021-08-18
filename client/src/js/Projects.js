@@ -52,8 +52,6 @@ export class Projects extends React.Component {
         </div>
         <div>
           <CarouselProvider
-            naturalSlideWidth={75}
-            naturalSlideHeight={100}
             totalSlides={3}
             isIntrinsicHeight={true}
           >
@@ -64,8 +62,10 @@ export class Projects extends React.Component {
               </Slide>
               <Slide index={2}>I am the third Slide.</Slide>
             </Slider>
-            <ButtonBack>Back</ButtonBack>
-            <ButtonNext>Next</ButtonNext>
+            <div className="carousel-buttons">
+              <ButtonBack className="carousel-back-button">Back</ButtonBack>
+              <ButtonNext className="carousel-next-button">Next</ButtonNext>
+            </div>
           </CarouselProvider>
         </div>
       </div>

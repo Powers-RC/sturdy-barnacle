@@ -28,6 +28,7 @@ img{
 }
 
 .dynamicNav a.icon{
+    z-index: 1;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -42,6 +43,7 @@ img{
 }
 
 .navbar span{
+    z-index: 1;
     position: fixed;
     width: 100%;
     background-color: white;
@@ -72,6 +74,13 @@ img{
     margin: 5%;
     width: 70%;
 }
+
+/* Projects */
+.carousel-buttons{
+    display: inline-block;
+    text-align: center;
+}
+
 
 /* Contact*/
 .contact-links{
@@ -119,3 +128,6 @@ footer{
     font-size: 8px;
 }
 
+.carousel-back-button, .carousel-next-button{
+    text-align: center;
+}

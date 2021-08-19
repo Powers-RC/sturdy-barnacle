@@ -1,11 +1,11 @@
 /* General */
 h1, h2{
     font-family: 'Oxygen', sans-serif;
+    font-size: 3vw;
 }
-h2{
-    font-size: 10vm;
-}
+
 body, a, h3, p{
+    font-size: 2vw;
     font-family: 'Fira Sans', sans-serif;
 }
 img{
@@ -95,6 +95,10 @@ img{
 .contact-mail, .contact-phone, .contact-web{
     flex-direction: column;
 }
+.contact-links img:hover{
+    width: 5%;
+    height: 5%;
+}
 
 /* Site Footer Styling */
 .site-footer img{
@@ -104,6 +108,7 @@ img{
     width: 33.3%;
     float: left;
     display: flex;
+    font-size: 1vw;
   }
   .Site-Footer-Cv, .Site-Footer-Social-Media{
     width: 33.3%;
@@ -115,9 +120,22 @@ img{
   .Social-Media-Llinks{
       flex-direction: row;
   }
-.Social-Media-Links a:hover{
-    background-color: #a15727;
+.Site-Footer{
+    position: relative;
+    margin-top: 10%;
+}
+.Site-Footer p, .Site-Footer .icon-disclaimer, .Site-Footer a {
+    font-size: 0.5vw;
+    margin-top: 10px;;
+}
+.Social-Media-Links img:hover{
     border-radius: 50%;
+    height: 10%;
+    width: 10%;
+}
+.Site-Footer-Cv img:hover{
+    height: 10%;
+    width: 10%;
 }
 footer{
     font-size: 10px;

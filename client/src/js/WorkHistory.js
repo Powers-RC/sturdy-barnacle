@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { GoldenWestJob } from './jobs/GoldenWestJob';
 
 export class WorkHistory extends Component {
+    constructor(props){
+      this.state = {};
+    }
     componentDidMount(){
       // Create the observer
       const observer = new IntersectionObserver(entries => {
@@ -32,6 +36,15 @@ export class WorkHistory extends Component {
                 <div className="work-line-animation animation-responsive-line"></div>
                 <div className="animation-responsive-text">
                   <h2 className="work-text-animation">Work History</h2>
+                </div>
+                <div className="work-history">
+                  <div className='work-radio-selection'>
+                    <input type="radio" id="gwis" name="jobs" value="GWIS" onClick={(val) => this.setState({selectedJob: val})}/>
+                    <label for="goldenwesttechnologies">Golden West Technologies</label><br/>
+                    <input type="radio" id="cdot" name="jobs" value="CDOT" onClick={(val) => this.setState({selectedJob: val})}/>
+                    <label for="xentity">Xentity</label><br/>
+                  </div>
+                  <GoldenWestJob/>
                 </div>
             </div>
           <div>

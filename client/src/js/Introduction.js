@@ -46,8 +46,10 @@ export class Introduction extends Component {
             <h3>Hey There!</h3>
             <p>
               My name is Cameron, I am a software engineer from the same place as "The Coldest Tasting Beer In The World",
-              that's right, Golden, Colorado. I am currently living in the hill of South Dakota, while working, and studying
-              to get my masters in computer science. This site is currently under construction, more features to come!
+              that's right, Golden, Colorado. I am currently living in the hill of South Dakota, while working and studying
+              to get my masters in computer science. If you see any trout or small fly fishing details that is because I
+              am also a local guide here in the hills, and love to include anything fishy! This site is currently under 
+              construction, more features to come.
             </p>
           </div>
         </div>

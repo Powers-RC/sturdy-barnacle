@@ -11,7 +11,8 @@
     padding: 1%;
 }
 .project-title{
-    color: #a15727;
+    color: #6e4623;
+    font-weight: bolder;
 }
 .project-details{
     background-color: grey;
@@ -24,7 +25,7 @@
     padding: 1%;
 }
 .project-description p{
-    background-color: #a15727;
+    background-color: #6e4623;
     border: solid 1px white;
     padding: 10%;
     margin: 1%;
@@ -54,5 +55,8 @@
     padding: 2%;
     margin: 2%;
     border: solid 1px white;
-    background-color: #a15727;
+    background-color: #6e4623;
+
+
+
 }

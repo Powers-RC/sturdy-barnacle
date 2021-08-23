@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-export class GoldenWestJob extends Component{
+export class XentityJob extends Component{
     render(){
         return(
             <div className="work-details-section">
-                <h3>Software Developer II</h3>
-                <h4>October 2019 - Present</h4>
+                <h3>Data Analyst</h3>
+                <h4>December 2017 - January 2020</h4>
                 <ul>
                     <li>
                         Maintaining and improving a ticketing system for company support services 

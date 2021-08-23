@@ -42,9 +42,9 @@ export class About extends Component{
           <h3>A little more about me...</h3>
             <p>
               I have been working as a software engineer for the last two year 
-              transitioning away from analytics... and boy to I love it! Most of my 
-              time is spent getting that important frontend information to is
-              safe location. API's! As of recently I have really developed a passion
+              transitioning away from analytics... and boy do I love it! Most of my 
+              time is spent getting that important frontend information to a
+              safe location, API's! As of recently I have really developed a passion
               for mobile and frontend development as well. This is why I decided 
               to FINALLY build my own webpage.  
             </p>

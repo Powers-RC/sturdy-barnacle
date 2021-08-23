@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { GoldenWestJob } from './jobs/GoldenWestJob';
+import { XentityJob } from './jobs/XentityJob';
 
 export class WorkHistory extends Component {
     constructor(props){
-      this.state = {};
+      super(props);
+      this.state = {selectedJob: "GWIS"};
+      this.handleJobClick = this.handleJobClick.bind(this);
     }
+
     componentDidMount(){
       // Create the observer
       const observer = new IntersectionObserver(entries => {
@@ -28,8 +32,21 @@ export class WorkHistory extends Component {
       observer.observe(document.querySelector('.work-line-animation'));
       observer.observe(document.querySelector('.work-text-animation'));
     }
+    
+    handleJobClick(event){
+      console.log(event.target);
+      this.setState({selectedJob: event.target.value});
+    }
+
 
   render() {
+    const selectedJob = this.state.selectedJob;
+    let jobContent = <GoldenWestJob/>;
+    if(selectedJob === "GWIS"){
+      jobContent = <GoldenWestJob/>
+    } else if(selectedJob === "CDOT"){
+      jobContent = <XentityJob/>
+    }
     return (
         <div id="work-section">
             <div className="animation-responsive-container">
@@ -37,15 +54,23 @@ export class WorkHistory extends Component {
                 <div className="animation-responsive-text">
                   <h2 className="work-text-animation">Work History</h2>
                 </div>
-                <div className="work-history">
-                  <div className='work-radio-selection'>
-                    <input type="radio" id="gwis" name="jobs" value="GWIS" onClick={(val) => this.setState({selectedJob: val})}/>
-                    <label for="goldenwesttechnologies">Golden West Technologies</label><br/>
-                    <input type="radio" id="cdot" name="jobs" value="CDOT" onClick={(val) => this.setState({selectedJob: val})}/>
-                    <label for="xentity">Xentity</label><br/>
+            </div>
+            <div>
+              <div className="work-history">
+                <div className='work-radio-selection'>
+                  <div className="work-buttons current-position">
+                    <button className={selectedJob === "GWIS"? "work-button selection": "work-button"} 
+                      type="button" id="gwis" name="jobs" value="GWIS" 
+                      onClick={this.handleJobClick}>Golden West Technologies</button>
                   </div>
-                  <GoldenWestJob/>
+                  <div className="work-buttons">
+                    <button className={selectedJob === "CDOT"? "work-button selection": "work-button"} 
+                      id="cdot" name="jobs" value="CDOT"
+                      onClick={this.handleJobClick}>Xentity</button>
+                  </div>
                 </div>
+                {jobContent}
+              </div>
             </div>
           <div>
 

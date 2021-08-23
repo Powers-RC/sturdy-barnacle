@@ -3,18 +3,11 @@
   "author": {
     "name": "Cameron Powers"
   },
-  "description": "Creating a personal react page to post about coding topics.",
+  "description": "Creating a personal react page to post about coding projects.",
   "keywords": [
     "react",
-    "postgresql",
-    "javascript",
-    "python",
-    "data science",
-    "questions",
-    "answers",
-    "thoughts"
+    "javascript"
   ],
-  "proxy": "http://localhost:8000",
   "bugs": {
     "email": "powerscameron@ymail.com"
   },

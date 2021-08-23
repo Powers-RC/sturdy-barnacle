@@ -110,6 +110,10 @@ img{
 }
 
 /* Projects */
+.project-carousel{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 .carousel-buttons{
     display: inline-block;
     text-align: center;

@@ -50,7 +50,7 @@ export class Projects extends React.Component {
             <h2 className="project-text-animation">Projects</h2>
           </div>
         </div>
-        <div>
+        <div className="project-carousel">
           <CarouselProvider
             totalSlides={3}
             isIntrinsicHeight={true}

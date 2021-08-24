@@ -45,7 +45,7 @@ import React, {Component} from "react";
             <br/>
             <div className="contact-links">
                 <a href="mailto:powerscameron@ymail.com">
-                  <img src={mailIcon} alt="Mail Icon For Email Address" height="10%" width="10%"/>
+                  <img src={mailIcon} alt="Mail Icon For Email Address" height="5%" width="5%"/>
                 </a>
             </div>
         </div>

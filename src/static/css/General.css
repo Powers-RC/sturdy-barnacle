@@ -109,6 +109,7 @@ img{
     margin-right: 5%;
 }
 
+
 /* Projects */
 .project-carousel{
     margin-top: 5%;
@@ -138,6 +139,8 @@ img{
 .contact-links a{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 .contact-mail, .contact-phone, .contact-web{
     flex-direction: column;

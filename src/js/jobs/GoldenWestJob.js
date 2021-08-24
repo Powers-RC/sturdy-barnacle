@@ -12,7 +12,12 @@ export class GoldenWestJob extends Component{
                     </li>
                     <li>
                         Designing and rebuilding a legacy service management plateform utilizing a more modern
-                        tool set using HTML,CSS,PHP(Slim, Doctrine),React.js
+                        tool set.
+                        <br/>
+                        <br/>
+                        (HTML, CSS, PHP(Slim, Doctrine), React)
+                        <br/>
+                        <br/>
                     </li>
                 </ul>
             </div>

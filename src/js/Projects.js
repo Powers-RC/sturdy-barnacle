@@ -1,7 +1,8 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import { PersonWebSiteSlide } from './slides/PersonalWebSite';
+import { PersonalWebSiteSlide } from './slides/PersonalWebSite';
+import { FirstMobileAppSlide } from './slides/FirstMobileApp';
 import "../static/css/Slide.css";
 
 const githubIcon = require("../static/icons/github.png")
@@ -56,11 +57,8 @@ export class Projects extends React.Component {
             isIntrinsicHeight={true}
           >
             <Slider>
-              <PersonWebSiteSlide />
-              <Slide index={1}>
-                <h1>This is a test for slide 2.</h1>
-              </Slide>
-              <Slide index={2}>I am the third Slide.</Slide>
+              <PersonalWebSiteSlide />
+              <FirstMobileAppSlide />
             </Slider>
             <div className="carousel-buttons">
               <ButtonBack className="carousel-back-button">Back</ButtonBack>

@@ -40,13 +40,17 @@
     height: 80%;
     width: 80%;
 }
+.project-tech-stack{
+    list-style: none;
+    padding-left: 0;
+    margin-right: 15px;
+}
 .project-tech-stack li{
-    display: inline;
+    display: inline-block;
     padding-left: 0%;
 }
 .project-github-link {
     margin-top: 10%;
-    padding-left: 40px;
 }
 .project-github-link a {
     padding-left: 2%;

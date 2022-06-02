@@ -19,7 +19,7 @@
     "ajv": "^6.5.4",
     "http-proxy-middleware": "^0.19.0",
     "i": "^0.3.6",
-    "npm": "^7.18.1",
+    "npm": "^8.11.0",
     "pg": "^7.6.1",
     "popper.js": "^1.14.4",
     "pure-react-carousel": "^1.27.6",

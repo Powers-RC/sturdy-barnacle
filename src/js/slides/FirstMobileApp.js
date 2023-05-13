@@ -19,7 +19,7 @@ export class FirstMobileAppSlide extends React.Component{
                         <div className="project-description">
                             <p>
                                 I am developing my first mobile application. I hope to have the an alpha out
-                                by the end of the year, and something in the app store by mid 2021.
+                                by the end of the year, and something in the app store by mid 2024.
                             </p>
                             <h3>Tools</h3>
                             <ul className="project-tech-stack">

@@ -12,7 +12,7 @@ export class SiteFooter extends Component{
       <div className="site-footer">
           <br/>
           <p className="Site-Footer-Copyright">&copy; Cameron Powers</p>
-          <p className="Site-Footer-Cv">CV<a href="https://drive.google.com/open?id=1mR-IAjk5cQl0v2cEdhELT3u7oomp3H3J"><img src={folderIcon} alt="Resume/CV Icon" height="7.5%" width="7.5%"/></a></p>
+          <p className="Site-Footer-Cv">CV<a href="https://drive.google.com/open?id=1jZM-gi968QiexFK-HuwgH3HeRjhADcH0"><img src={folderIcon} alt="Resume/CV Icon" height="7.5%" width="7.5%"/></a></p>
           <p className="Site-Footer-Social-Media">
               <div>
                 <span>Follow me on social media:</span>
